@@ -1,11 +1,12 @@
 {
-  "name": "MangooseExpressDemo",
-  "version": "0.0.0",
-  "description": "MangooseExpressDemo",
+  "name": "API.js",
+  "version": "0.0.1",
+  "description": "API.js: Guideline to build a strong API thanks to NodeJs",
   "main": "server.js",
   "author": {
-    "name": "beta_ymartel_s20",
-    "email": ""
+    "name": "Yohann MARTEL",
+    "email": "",
+	"url": "www.ninjavascript.com",
   },
   "dependencies": {
     "express": "~3.4.8",
