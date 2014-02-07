@@ -33,16 +33,10 @@ var ArticleSchema = new Schema({
 ArticleSchema.path('title').validate(function(title) {
     return title.length;
 }, 'Title cannot be blank');
+
 /**
  * Statics
  */
-/*
-ArticleSchema.statics.load = function(id, cb) {
-    this.findOne({
-        _id: id
-    }).populate('user', 'name username').exec(cb);
-};
-*/
 ArticleSchema.methods = {
     log: function() {
         console.log(this.title);

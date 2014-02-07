@@ -1,6 +1,6 @@
 'use strict';
 
-var config = require('./app/configs/config');
+var config = require('./configs/config');
 
 var mongoserver = require('./app/mongoserver');
 var models_path = __dirname + '/app/models';

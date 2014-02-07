@@ -3,13 +3,9 @@
 module.exports = function(app) {
 
     app.get('/articles', articles.findAll);
-    app.get('/articles/:id', articles.findById);
+    app.get('/articles/:articleId', articles.findById);
     app.post('/articles', articles.addArticle);
-    app.put('/articles/:id', articles.updateArticle);
-    app.delete('/articles/:id', articles.deleteArticle);
+    app.put('/articles/:articleId', articles.updateArticle);
+    app.delete('/articles/:articleId', articles.deleteArticle);
     
-    /*
-    // Finish with setting up the articleId param
-    app.param('articleId', articles.article);
-    */
 };

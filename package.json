@@ -1,11 +1,11 @@
 {
   "name": "API.js",
-  "version": "0.0.1",
+  "version": "0.4.0",
   "description": "API.js: Guideline to build a strong API thanks to NodeJs",
   "main": "server.js",
   "author": {
     "name": "Yohann MARTEL",
-    "email": "",
+    "email": "yohann@ninjavascript.com",
 	"url": "www.ninjavascript.com",
   },
   "dependencies": {

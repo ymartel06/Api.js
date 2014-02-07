@@ -29,8 +29,6 @@ var WebServer = function() {
     };
     
     var initConfigs = function(config) {
-        
-
         // all environments
         app.use(express.logger('dev'));
         app.use(express.json());
@@ -41,13 +39,6 @@ var WebServer = function() {
     
     var initRoutes = function(routesPath) {
         loader.requireDirectory(routesPath,app);
-        /*
-        app.get('/articles', articles.findAll);
-        app.get('/articles/:id', articles.findById);
-        app.post('/articles', articles.addArticle);
-        app.put('/articles/:id', articles.updateArticle);
-        app.delete('/articles/:id', articles.deleteArticle);
-        */
     };
     
     return {

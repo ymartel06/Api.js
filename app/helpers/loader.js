@@ -1,7 +1,10 @@
 ﻿'use strict';
 
-var fs = fs = require('fs');
+var fs = require('fs');
 
+/**
+* Load all files using require (coffee script or javascript)
+*/
 module.exports.requireDirectory = function(path, app) {
     fs.readdirSync(path).forEach(function(file) {
         var newPath = path + '/' + file;
