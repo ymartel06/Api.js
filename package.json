@@ -6,7 +6,7 @@
   "author": {
     "name": "Yohann MARTEL",
     "email": "yohann@ninjavascript.com",
-	"url": "www.ninjavascript.com",
+	"url": "www.ninjavascript.com"
   },
   "dependencies": {
     "express": "~3.4.8",
