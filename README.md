@@ -46,8 +46,8 @@ Delete an article
 Next version
 ------------
 
-*0.5 Integration of GruntJS and JSHint
-*0.6 Unit tests thanks to Mocha
-*0.7 Generation of documentation thanks to YUIDoc
-*0.8 API Security (HTTPS?)
-*0.9 Optimization
+* 0.5 Integration of GruntJS and JSHint
+* 0.6 Unit tests thanks to Mocha
+* 0.7 Generation of documentation thanks to YUIDoc
+* 0.8 API Security (HTTPS?)
+* 0.9 Optimization
