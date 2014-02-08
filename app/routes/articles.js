@@ -1,4 +1,6 @@
-﻿var articles = require('../controllers/articles');
+﻿'use strict';
+
+var articles = require('../controllers/articles');
 
 module.exports = function(app) {
 

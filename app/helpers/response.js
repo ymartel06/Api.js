@@ -1,4 +1,6 @@
-﻿/**
+﻿'use strict';
+
+/**
 * Private method to send a json response
 */
 function sendResponse(res,statusNumber, statusMessage, data, message) {

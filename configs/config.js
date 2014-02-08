@@ -3,7 +3,7 @@
 // Utilize Lo-Dash utility library
 var _ = require('lodash');
 
-function GetEnvironment()
+function getEnvironment()
 {
     var env = 'development';
     if (process.env.NODE_ENV)
@@ -17,5 +17,5 @@ function GetEnvironment()
 // specific configuration
 module.exports = _.extend(
     require(__dirname + '/env/all.js'),
-    require(__dirname + '/env/' + GetEnvironment() + '.js') || {}
+    require(__dirname + '/env/' + getEnvironment() + '.js') || {}
 );

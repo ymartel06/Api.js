@@ -1,8 +1,8 @@
 ﻿'use strict';
 
 module.exports = {
-    mongodb: "mongodb://localhost/api-production",
+    mongodb: 'mongodb://localhost/api-production',
     app: {
-        name: "API Production"
+        name: 'API Production'
     }
-}
+};

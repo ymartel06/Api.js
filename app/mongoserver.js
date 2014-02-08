@@ -1,7 +1,9 @@
-﻿var loader = require('../app/helpers/loader'),
+﻿'use strict';
+
+var loader = require('../app/helpers/loader'),
     mongoose = require('mongoose');
 
-var MongoServer = function() {
+var mongoServer = function() {
     var db;
 
     var _init = function(modelsPath,config) {
@@ -15,4 +17,4 @@ var MongoServer = function() {
     };
 }();
 
-module.exports = MongoServer;
+module.exports = mongoServer;

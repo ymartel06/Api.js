@@ -11,7 +11,7 @@ var mongoose = require('mongoose'),
 /**
 * Private method to update article
 */
-function UpdateArticle(article, res) {
+function updateArticle(article, res) {
     if (article) {
         article.save(function(err) {
             if (err) {
@@ -19,14 +19,14 @@ function UpdateArticle(article, res) {
             } else {
                 Response.Success(res, article);
             }
-        });  
+        });
     }
 }
 
 /**
 * Private method to delete article
 */
-function DeleteArticle(article, res) {
+function deleteArticle(article, res) {
     if (article) {
         article.remove(function(err) {
             if (err) {
@@ -41,7 +41,7 @@ function DeleteArticle(article, res) {
 /**
 * Private method to get an article thanso to
 */
-function GetArticleById(id, res, cb) {
+function getArticleById(id, res, cb) {
     Article.findOne({_id: id}).exec(function(err, article) {
         if (err) {
             Response.InternalError(res, err);
@@ -74,8 +74,8 @@ exports.findAll = function(req, res) {
 */
 exports.findById = function(req, res) {
     var id = req.params.articleId;
-    GetArticleById(id, res, function(err, article) {
-        if (err == null) {
+    getArticleById(id, res, function(err, article) {
+        if (err === null) {
             Response.Success(res, article);
         }
     });
@@ -102,10 +102,10 @@ exports.addArticle = function(req, res) {
 exports.updateArticle = function(req, res) {
     var id = req.params.articleId;
     
-    GetArticleById(id, res, function(err, article) {
-        if (err == null) {
+    getArticleById(id, res, function(err, article) {
+        if (err === null) {
             article = _.extend(article, req.body);
-            UpdateArticle(article, res);
+            updateArticle(article, res);
         }
     });
 };
@@ -116,9 +116,9 @@ exports.updateArticle = function(req, res) {
 exports.deleteArticle = function(req, res) {
     var id = req.params.articleId;
     
-    GetArticleById(id, res, function(err, article) {
-        if (err == null) {
-            DeleteArticle(article, res);
+    getArticleById(id, res, function(err, article) {
+        if (err === null) {
+            deleteArticle(article, res);
         }
     });
 };

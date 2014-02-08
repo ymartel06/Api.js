@@ -10,6 +10,7 @@ Install
 
 Make sure you have nodejs [node.js](http://nodejs.org) and [mongodb](http://mongodb.org) correctely set up.
 Then install API.js dependencies with :
+
 	$ npm install
 
 Start server
@@ -17,7 +18,7 @@ Start server
 
 To start the server, simply execute this command in your terminal
 
-	$ nodemon server.js
+	$ node server.js
 	
 
 Try it
@@ -43,10 +44,16 @@ Delete an article
 
 	curl -i -X DELETE http://localhost:3000/articles/52f4ad649a718c2c1098fb66
 
+
+Changelog
+---------
+
+* 0.4 CRUD on articles  
+* 0.5 Integration of GruntJS and JSHint
+
 Next version
 ------------
 
-* 0.5 Integration of GruntJS and JSHint
 * 0.6 Unit tests thanks to Mocha
 * 0.7 Generation of documentation thanks to YUIDoc
 * 0.8 API Security (HTTPS?)

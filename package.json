@@ -6,11 +6,14 @@
   "author": {
     "name": "Yohann MARTEL",
     "email": "yohann@ninjavascript.com",
-	"url": "www.ninjavascript.com"
+    "url": "www.ninjavascript.com"
   },
   "dependencies": {
     "express": "~3.4.8",
     "mongoose": "~3.8.5",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }

@@ -1,8 +1,9 @@
-﻿var express = require('express'),
-    loader = require('../app/helpers/loader'),
-    articles = require('../app/controllers/articles');
+﻿'use strict';
+
+var express = require('express'),
+    loader = require('../app/helpers/loader');
         
-var WebServer = function() {
+var webServer = function() {
     var app = null;
     
     var _init = function(config, routesPath) {
@@ -10,10 +11,10 @@ var WebServer = function() {
         if (config) {
             app = express();
         
-            initConfigs(config);
+            initConfigs();
         
             // development only
-            if (app.get('env') == 'development') {
+            if (app.get('env') === 'development') {
                 app.use(express.errorHandler());
             }
 
@@ -28,7 +29,7 @@ var WebServer = function() {
 
     };
     
-    var initConfigs = function(config) {
+    var initConfigs = function() {
         // all environments
         app.use(express.logger('dev'));
         app.use(express.json());
@@ -47,4 +48,4 @@ var WebServer = function() {
 
 }();
 
-module.exports = WebServer;
+module.exports = webServer;
