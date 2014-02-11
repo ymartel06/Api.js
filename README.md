@@ -22,7 +22,7 @@ To start the server, simply execute this command in your terminal
 	
 
 Try it
-------------
+------
 
 Get all articles
 
@@ -45,16 +45,30 @@ Delete an article
 	curl -i -X DELETE http://localhost:3000/articles/52f4ad649a718c2c1098fb66
 
 
+Clean the code thanks to Grunt and JsHint
+----------------------------------------
+
+The entire configuration is inside .jshintrc. The only things you have to do is to launch grunt.
+
+	grunt
+
+Test it thanks to Grunt and Mocha
+---------------------------------
+
+It's really easy to launch all unit tests
+
+	grunt test
+
 Changelog
 ---------
 
 * 0.4 CRUD on articles  
 * 0.5 Integration of GruntJS and JSHint
+* 0.6 Unit tests thanks to Mocha
 
 Next version
 ------------
 
-* 0.6 Unit tests thanks to Mocha
 * 0.7 Generation of documentation thanks to YUIDoc
 * 0.8 API Security (HTTPS?)
 * 0.9 Optimization
