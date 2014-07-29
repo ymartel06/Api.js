@@ -4,7 +4,7 @@
 * Private method to send a json response
 */
 function sendResponse(res,statusNumber, statusMessage, data, message) {
-    res.jsonp(statusNumber, {'status':statusMessage,'data':data,'message':message});
+    res.status(statusNumber).jsonp({'status':statusMessage,'data':data,'message':message});
 }
 
 /**

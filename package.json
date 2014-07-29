@@ -1,24 +1,28 @@
 {
   "name": "API.js",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "API.js: Guideline to build a strong API thanks to NodeJs",
   "main": "server.js",
   "author": {
     "name": "Yohann MARTEL",
-    "email": "yohann@ninjavascript.com",
-    "url": "www.ninjavascript.com"
+    "email": "yohann@ymartel.com",
+    "url": "www.ymartel.com"
   },
   "dependencies": {
-    "express": "~3.4.8",
-    "mongoose": "~3.8.5",
-    "lodash": "~2.4.1",
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "should": "~3.1.2",
-    "mocha": "~1.17.1",
-    "grunt-mocha-test": "~0.9.0",
-    "grunt-env": "~0.4.1",
-    "supertest": "~0.9.0"
+    "express": "*",
+    "morgan": "*",
+    "body-parser": "*",
+    "method-override": "*",
+    "errorhandler": "*",
+    "mongoose": "*",
+    "lodash": "*",
+    "grunt": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "should": "*",
+    "mocha": "*",
+    "grunt-mocha-test": "*",
+    "grunt-env": "*",
+    "supertest": "*"
   }
 }

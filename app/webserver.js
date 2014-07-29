@@ -1,6 +1,10 @@
 ﻿'use strict';
 
 var express = require('express'),
+	morgan = require('morgan'),
+	errorHandler = require('errorhandler'),
+	bodyParser = require('body-parser'),
+	methodOverride = require('method-override'),
     loader = require('../app/helpers/loader');
         
 var webServer = function() {
@@ -15,7 +19,7 @@ var webServer = function() {
         
             // development only
             if (app.get('env') === 'development') {
-                app.use(express.errorHandler());
+                app.use(errorHandler());
             }
 
             initRoutes(routesPath);
@@ -30,12 +34,12 @@ var webServer = function() {
     };
     
     var initConfigs = function() {
-        // all environments
-        app.use(express.logger('dev'));
-        app.use(express.json());
-        app.use(express.urlencoded());
-        app.use(express.methodOverride());
-        app.use(app.router);
+        app.use(morgan('dev'));
+        app.use(bodyParser.json());
+		app.use(bodyParser.urlencoded({
+		  extended: true
+		}));
+        app.use(methodOverride());
     };
     
     var initRoutes = function(routesPath) {

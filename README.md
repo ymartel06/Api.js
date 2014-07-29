@@ -3,8 +3,6 @@
 
 API.js: Some guidelines to make your API thanks to NodeJs.
 
-You can fallow us on [ninjavascript.com](http://www.ninjavascript.com)
-
 Install
 -------
 
@@ -65,10 +63,10 @@ Changelog
 * 0.4 CRUD on articles  
 * 0.5 Integration of GruntJS and JSHint
 * 0.6 Unit tests thanks to Mocha
+* 0.7 Update the code to be compliant with ExpressJS 4.0
 
 Next version
 ------------
 
-* 0.7 Generation of documentation thanks to YUIDoc
-* 0.8 API Security (HTTPS?)
-* 0.9 Optimization
+* 0.8 Generation of documentation thanks to YUIDoc
+* 0.9 API Security (HTTPS?)
