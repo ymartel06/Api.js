@@ -4,6 +4,7 @@
 * Private method to send a json response
 */
 function sendResponse(res,statusNumber, statusMessage, data, message) {
+	res.setHeader('Access-Control-Allow-Origin','*');
     res.status(statusNumber).jsonp({'status':statusMessage,'data':data,'message':message});
 }
 
