@@ -28,3 +28,10 @@ exports.Success = function(res, data) {
 exports.NotFound = function(res, data) {
     sendResponse(res, 404, 'notfound', data, '404 - Not Found');
 };
+
+/**
+* Send a json response for a bad request (400)
+*/
+exports.BadRequest = function(res, data) {
+    sendResponse(res, 400, 'badrequest', data, '400 - Bad Request');
+};

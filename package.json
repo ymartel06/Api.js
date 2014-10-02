@@ -16,6 +16,7 @@
     "errorhandler": "*",
     "mongoose": "*",
     "lodash": "*",
+    "validator": "*",
     "grunt": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-watch": "*",
