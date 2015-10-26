@@ -5,6 +5,7 @@ var express = require('express'),
 	errorHandler = require('errorhandler'),
 	bodyParser = require('body-parser'),
 	methodOverride = require('method-override'),
+	expressValidator = require('express-validator'),
     loader = require('../app/helpers/loader');
         
 var webServer = function() {
@@ -39,6 +40,7 @@ var webServer = function() {
 		app.use(bodyParser.urlencoded({
 		  extended: true
 		}));
+		app.use(expressValidator());
         app.use(methodOverride());
     };
     
