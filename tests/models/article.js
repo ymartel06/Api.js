@@ -12,7 +12,7 @@ var article;
 
 //Tests
 describe('<Article Model>', function() {
-    beforeEach(function(done) {
+    before(function(done) {
         article = new Article({
             title: 'Article Title (test)',
             content: 'Article Content (test)'
@@ -39,10 +39,6 @@ describe('<Article Model>', function() {
         });
     });
 
-    afterEach(function(done) {
-        Article.remove({});
-        done();
-    });
     after(function(done) {
         Article.remove().exec();
         done();

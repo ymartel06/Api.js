@@ -14,7 +14,7 @@ var article;
 
 //The tests
 describe('<Articles Controller>', function() {
-    beforeEach(function(done) {
+    before(function(done) {
         //create an article to read, update and delete
         article = new Article({
             title: 'Article Title (test)',
@@ -154,13 +154,8 @@ describe('<Articles Controller>', function() {
             });
         });
 
-    });
-    
-        
-        
-    afterEach(function(done) {
-        done();
-    });
+    });    
+               
         
     after(function(done) {
         Article.remove().exec();
